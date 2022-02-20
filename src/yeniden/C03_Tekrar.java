@@ -1,5 +1,7 @@
 package yeniden;
 
+import java.util.Scanner;
+
 public class C03_Tekrar {
 
     /*
@@ -17,5 +19,31 @@ public class C03_Tekrar {
      *
      *
      */
+
+    public static void main(String[] args) {
+
+
+        Scanner scan=new Scanner(System.in);
+        System.out.println("boyunuzu giriniz");
+        System.out.println("kac kilosunuz giriniz");
+
+        double boy=scan.nextDouble();
+        double kilo=scan.nextDouble();
+
+        double vke=kilo/(boy*boy);
+
+
+        // boyu cm olarak aldik ama metreye cevirmemiz gerekiyor
+
+        boy/=100;  // boy=boy/100  boy++ , boy+=5
+
+
+        System.out.println("Vucut kutle endeksiniz : " + vke);
+
+
+    }
+
+
+
 
 }
